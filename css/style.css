@@ -1,0 +1,55 @@
+.post1{
+  background-image: url("../image/블랙홀.jpg");
+  width: 100%;
+  height: 780px;
+  background-size: cover;
+  position:relative;
+}
+
+.post1 .Star-fastival{
+  color : #fefefe;
+  font-size : 56px;
+  font-weight: 600;
+  position: absolute;
+  top : 100px;
+  left : 60px;
+}
+
+
+.post1 .Star-ment{
+  color : #fefefe;
+  font-size : 32px;
+  position: absolute;
+  top: 172px;
+  left : 67px;
+  font-style: italic;
+}
+
+.post1 .black-hole{
+  position : absolute;
+  width : 368px;
+  height : 368px;
+  border-radius: 199px;
+  top : 220px;
+  left : 592px;
+}
+
+.post1 .black-hole a{
+  position : absolute;
+  width : 368px;
+  height : 368px;
+  border-radius: 199px;
+  cursor : pointer;
+}
+
+.post1 .lets_hole{
+  color : #fefefe;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  top: 400px;
+  left : 680px;
+  height : 50px;
+  width : 200px;
+  transition: 1s;
+}
