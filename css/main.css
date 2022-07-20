@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'KOTRALEAP';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRALEAP.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  height : 4000px;
+  width : 100%;
+}
+
+a{
+  text-decoration: none;
+  color : #fefefe;
+}
+
+/* HEADER */
+
+header {
+  width : 100%;
+  height : 280px;
+  background-image: url("../image/헤더배경.jpg");
+  border-radius: 0 0 12px 12px;
+  background-size: contain;
+  z-index: 1000;
+}
+
+header ul{
+  display : flex;
+  justify-content: space-between;
+}
+
+header ul li{
+  font-family: 'KOTRALEAP';
+  width : 200px;
+  height : 115px;
+  border-radius: 160px;
+  background-color: red;
+  text-align: center;
+  padding-top : 85px;
+  cursor : pointer;
+  color : #fefefe;
+  font-size: 32px;
+  background-color: #040404;
+  transition: .6s;
+  margin-top: 30px;
+  border : 1px solid #fefefe;
+  position: relative;
+  
+}
+
+header ul li a {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top : -20px;
+  bottom : 0;
+  left : 0;
+  right : 0;
+  margin : auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li a span{
+  display :inline-block;
+}
+
+header ul .content{
+  font-family: 'KOTRALEAP';
+  font-size: 26px;
+}
+
+header ul li:hover{
+  transform: scale(1.3);
+}
+
+/* intro space */
+
+.intro_sun {
+  position : relative;
+  width : 100%;
+  height : 900px;
+  background-image: url("../image/태양계.jpg");
+  background-size: cover;
+}
+
+.intro_sun .sun{
+  position : absolute;
+  top : 120px;
+  left : -300px;
+  opacity: .4;
+  width : 500px;
+  height : 597px;
+  background-image: url("../image/태양.jpg");
+  border : 1px solid #040404;
+  border-radius: 32px;
+  transition: .8s;
+  background-size: auto;
+  overflow: hidden;
+}
+
+.intro_sun .sun .sun_name{
+  font-family: 'KOTRALEAP';
+  position: absolute;
+  bottom : 0;
+  width : 500px;
+  height : 120px;
+  color : #fefefe;
+  border-radius: 32px;
+  text-align: center;
+  padding-top : 80px;
+  font-size: 54px;
+  background-color: #040404;
+}
+
+.intro_sun .sun.fade-in{
+  transform : translateX(350px);
+  opacity: 1;
+}
+
+.intro_sun .sun_explain{
+  position: absolute;
+  top : 210px;
+  left : -50px;
+  opacity: .4;
+  width : 530px;
+  height : 400px;
+  background-color: black;
+  border: 1px solid #fefefe;
+  color : #fefefe;
+  border-radius: 16px;
+  line-height: 30px;
+  transition: 1s;
+}
+
+.intro_sun .sun_explain.fade-in{
+  transform: translateX(650px);
+  opacity: 1;
+}
+
+.intro_sun .sun_explain h1{
+  font-family: 'KOTRALEAP';
+  font-size : 54px;
+  display: block;
+  width : 352px;
+  height : 54px;
+  position: absolute;
+  top : 16px;
+  left:0;
+  right :0;
+  margin: 5px auto 0;
+}
+
+.intro_sun .sun_explain span{
+  font-family: 'KOTRALEAP';
+  font-size: 16px;
+  display : block;
+  width : 500px;
+  height : 300px;
+  position: absolute;
+  top : 150px;
+  margin-left : 12px;
+}
+
+.intro_sun .sun_explain a{
+  font-family: 'KOTRALEAP';
+  position : absolute;
+  bottom : 10px;
+  right : 10px;
+  padding : 2px;
+  color :#ff5100;
+  border : 1px solid #ff7c7c;
+}
+
+.intro_sun .sun_explain a:hover{
+  background-color: #ff5100;
+  border : 1px solid #ff7c7c;
+  color :#fefefe;
+  transform: scale(1.09);
+}
+
+/*intro galaxy*/
+
+
+.intro_galaxy {
+  position : relative;
+  width : 100%;
+  height : 900px;
+  background-image: url("../image/은하.jpg");
+  background-size: cover;
+}
+
+.intro_galaxy .galaxy{
+  position : absolute;
+  top : 120px;
+  left : -300px;
+  opacity: .4;
+  width : 500px;
+  height : 597px;
+  background-image: url("../image/은하포스터.jpeg");
+  background-repeat: no-repeat;
+  background-size:initial;
+  border : 1px solid #040404;
+  border-radius: 32px;
+  transition: .8s;
+  background-size: auto;
+  overflow: hidden;
+}
+
+.intro_galaxy .galaxy .galaxy_name{
+  font-family: 'KOTRALEAP';
+  position: absolute;
+  bottom : 0;
+  width : 500px;
+  height : 120px;
+  color : #fefefe;
+  border-radius: 32px;
+  text-align: center;
+  padding-top : 80px;
+  font-size: 54px;
+  background-color: #040404;
+}
+
+.intro_galaxy .galaxy.fade-in{
+  transform : translateX(350px);
+  opacity: 1;
+}
+
+.intro_galaxy .galaxy_explain{
+  position: absolute;
+  top : 210px;
+  left : -50px;
+  opacity: .4;
+  width : 530px;
+  height : 400px;
+  background-color: black;
+  border: 1px solid #fefefe;
+  color : #fefefe;
+  border-radius: 16px;
+  line-height: 30px;
+  transition: 1s;
+}
+
+.intro_galaxy .galaxy_explain.fade-in{
+  transform: translateX(650px);
+  opacity: 1;
+}
+
+.intro_galaxy .galaxy_explain h1{
+  font-family: 'KOTRALEAP';
+  font-size : 54px;
+  display: block;
+  width : 352px;
+  height : 54px;
+  position: absolute;
+  top : 16px;
+  left:0;
+  right :0;
+  margin: 5px auto 0;
+}
+
+.intro_galaxy .galaxy_explain span{
+  font-family: 'KOTRALEAP';
+  font-size: 16px;
+  display : block;
+  width : 500px;
+  height : 300px;
+  position: absolute;
+  top : 150px;
+  margin-left : 12px;
+}
+
+.intro_galaxy .galaxy_explain a{
+  font-family: 'KOTRALEAP';
+  position : absolute;
+  bottom : 10px;
+  right : 10px;
+  padding : 2px;
+  color :#ff5100;
+  border : 1px solid #ff7c7c;
+}
+
+.intro_galaxy .galaxy_explain a:hover{
+  background-color: #ff5100;
+  border : 1px solid #ff7c7c;
+  color :#fefefe;
+  transform: scale(1.09);
+}
