@@ -8,10 +8,18 @@ const $galaxy = document.querySelector(".intro_galaxy");
 const $galaxyIntro = document.querySelector(".intro_galaxy .galaxy");
 const $galaxyExplain = document.querySelector(".intro_galaxy .galaxy_explain");
 
+// station
+const $station = document.querySelector(".intro_station");
+const $stationIntro = document.querySelector(".intro_station .station");
+const $stationExplain = document.querySelector(".intro_station .station_explain");
+
+
+
 const FADEIN = ' fade-in';
 
 let sunFadeCount = 0;
 let galaxyFadeCount = 0;
+let stationFadeCount = 0;
 
 // 태양계 소개 fade-in
 $sun.addEventListener("mouseover",function(){
@@ -48,3 +56,20 @@ $galaxy.addEventListener("mouseout", function(){
   }
 });
 
+// Station Fade-in
+
+$station.addEventListener("mouseover",function(){
+  if(stationFadeCount === 0){
+  $stationIntro.className += FADEIN;
+  $stationExplain.className += FADEIN;
+  stationFadeCount++;
+  }
+});
+
+$station.addEventListener("mouseout", function(){
+  if(stationFadeCount == 1){
+    $stationIntro.className = 'station';
+    $stationExplain.className = 'station_explain';
+    stationFadeCount--; 
+  }
+});
